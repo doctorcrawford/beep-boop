@@ -15,3 +15,17 @@ body {
   background-color: rgba(33, 148, 146, 0.673);
   box-shadow: 5px 10px;
 }
+body{
+}
+
+form {
+  margin-top: 30px;
+  width: auto;
+  content: auto;
+  outline: 2px solid rgba(33, 148, 146, 0.673)
+
+}
+
+button {
+  text-align: center;
+}
