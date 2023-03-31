@@ -1,3 +1,39 @@
+# Beep Boop
+
+#### By Kyle Crawford
+
+#### A web application that takes a number from the user and returns a list of values from 0 to the user's inputted number with various substitutions
+
+## Technologies Used
+
+* HTML
+* CSS
+* Javascript
+* Bootstrap
+* Git
+
+## Description
+
+This website allows users to enter a number as well as their name, and returns to them a list of values from 0 to the user's inputted number with various substitutions made.
+
+## Setup/Installation Requirements
+
+* Clone this repository to your desktop
+* Navigate to the top level of the directory.
+* Open index.html in your browser.
+
+## Known Bugs
+
+* None to my knowledge.
+
+## License
+
+[MIT](https://opensource.org/license/mit/)
+
+Copyright (c) 2023 Kyle Crawford
+
+
+
 
 TDD
 
