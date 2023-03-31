@@ -8,19 +8,25 @@ function includesNumber(input, number) {
 
 // Business Logic
 
-function beepBoop(userInput) {
+function beepBoop(userInputNumber, userInputName) {
   let output = [];
-  for (let i = 0; i <= userInput; i++) {
-    if (includesNumber(i, 3)){
-      output.push("Won't you be my neighbor?");
-    } else if (includesNumber(i, 2)){
-      output.push("Boop");
-    } else if (includesNumber(i, 1)){
-      output.push("Beep");
-    } else {
-      output.push(i);
-    }
-  }
+  // if (userInputNumber.trim() == 0) {
+  //   window.alert("Please enter a number!");
+  // } else if (userInputName.trim() == 0) {
+  //   window.alert("Please enter a name!");
+  // } else {
+    for (let i = 0; i <= userInputNumber; i++) {
+      if (includesNumber(i, 3)){
+        output.push(`Won\'t you be my neighbor, ${userInputName}?`);
+      } else if (includesNumber(i, 2)){
+        output.push("Boop");
+      } else if (includesNumber(i, 1)){
+        output.push("Beep");
+      } else {
+        output.push(i);
+      }
+      }
+    // }
   return output
 }
 
@@ -33,9 +39,16 @@ function runNeighborhood(e) {
   e.preventDefault();
   document.getElementById("neighborhood").removeAttribute("class", "hidden");
   const inputNumber = document.getElementById('inputNumber').value;
-  result.innerHTML = beepBoop(inputNumber).join(", ");
-}
+  const inputName = document.getElementById('inputName').value;
 
+  if (inputNumber == 0) {
+    result.innerHTML = "Please enter a number!";
+  } else if (inputName.trim() == 0) {
+    result.innerHTML = "Please enter a name!";
+  } else {
+    result.innerHTML = beepBoop(inputNumber, inputName).join(", ");
+  }
+}
 window.addEventListener('load', function() {
   form.addEventListener('submit', runNeighborhood);
 });

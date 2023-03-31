@@ -50,11 +50,11 @@ label {
 }
 
 @keyframes colorchange {
-  0%   {background-color:red}
-  20%  {background-color:yellow}
-  40%  {background-color:blue}
-  60%  {background-color:green}
-  80% {background-color:red}
+  0%   {background-color:rgba(215, 63, 63, 0.84)}
+  20%  {background-color:rgba(240, 240, 105, 0.755)}
+  40%  {background-color:rgba(36, 122, 227, 0.84)}
+  60%  {background-color:rgba(30, 150, 30, 0.84)}
+  80% {background-color:rgba(125, 62, 187, 0.84)}
   100% {background-color:rgba(211, 82, 231, 0.84)}
 }
 
