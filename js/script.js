@@ -26,16 +26,17 @@ function beepBoop(userInput) {
 
 
 // UI Logic
+const form = document.querySelector('form');
+let result = document.getElementById("result");
+
 
 function runNeighborhood(e) {
   e.preventDefault();
-  const inputNumber = document.getElementById('inputNumber');
+  const inputNumber = document.getElementById('inputNumber').value;
 
-  // console.log(beepBoop(inputNumber));
+  result.append(beepBoop(inputNumber).toString(" "));
 }
 
 window.addEventListener('load', function() {
-  const form = document.querySelector('form');
   form.addEventListener('submit', runNeighborhood);
-  
 });
