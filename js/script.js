@@ -29,12 +29,12 @@ function beepBoop(userInput) {
 const form = document.querySelector('form');
 let result = document.getElementById("result");
 
-
 function runNeighborhood(e) {
   e.preventDefault();
+  document.getElementById("neighborhood").removeAttribute("class", "hidden");
   const inputNumber = document.getElementById('inputNumber').value;
 
-  result.append(beepBoop(inputNumber).toString(" "));
+  result.append(beepBoop(inputNumber).join(", "));
 }
 
 window.addEventListener('load', function() {
