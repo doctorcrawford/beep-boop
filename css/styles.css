@@ -1,31 +1,53 @@
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 body {
     background: url(neighborhood.jpg);
 }
 
-.masthead {
-  height 20vh;
+.header {
+  height: 20vh;
   min-height: 80px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: rgba(33, 148, 146, 0.673);
-  box-shadow: 5px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(33, 148, 146, 0.873);
+  box-shadow: 5px 8px 5px rgb(193, 193, 193);
+  margin: 10px;
+  padding: 10px;
+  border: 10px groove black;
+  /* box-sizing: border-box; */
 }
 body{
 }
 
 form {
   margin-top: 30px;
-  width: auto;
-  content: auto;
-  outline: 2px solid rgba(33, 148, 146, 0.673)
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 55vh;
+  text-align: center;
+  background-color: rgba(201, 78, 50, 0.84);
+  border: 4px solid black;
+  font-weight: 800;
+  padding: 12px;
 }
 
-button {
+label {
+  margin-bottom: 20px;
+}
+
+#neighborhood {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vh;
+  outline: 2px solid rgba(33, 148, 146, 0.673);
   text-align: center;
+  background-color: rgba(105, 105, 105, 0.84);
+  font-weight: 800;
+  padding: 12px;
+  border: 5px solid black;
 }

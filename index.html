@@ -11,22 +11,18 @@
 </head>
 <body>
   <div class="container">
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center">
-            <h1 class="fw-light">Welcome to Mr. Roboger's Neighborhood!</h1>
-            <p class="lead">Beep Boop</p>
-          </div>
-        </div>
-      </div>
-    </header>
-    <form>
-      <label for="inputNumber">Please enter any number:</label>
-      <input type="number" id="inputNumber" name="inputNumber">
-      <br>
-      <button type="submit">Enter the neighborhood</button>
-    </form>
+    <div class="header">
+      <h1>Welcome to Mr. Roboger's Neighborhood!</h1>
+      <p>Beep Boop</p>
+    </div>
+    <div id="form">
+      <form>
+        <label for="inputNumber">Please enter any number:</label>
+        <input type="number" id="inputNumber" name="inputNumber">
+        <br>
+        <button type="submit">Enter the neighborhood</button>
+      </form>
+    </div>
     <div class="hidden" id="neighborhood">
       <h3>Howdy Neighbor!</h3>
       <p id="result"></p>
