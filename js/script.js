@@ -23,3 +23,19 @@ function beepBoop(userInput) {
   }
   return output
 }
+
+
+// UI Logic
+
+function runNeighborhood(e) {
+  e.preventDefault();
+  const inputNumber = document.getElementById('inputNumber');
+
+  // console.log(beepBoop(inputNumber));
+}
+
+window.addEventListener('load', function() {
+  const form = document.querySelector('form');
+  form.addEventListener('submit', runNeighborhood);
+  
+});
