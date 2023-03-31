@@ -33,8 +33,7 @@ function runNeighborhood(e) {
   e.preventDefault();
   document.getElementById("neighborhood").removeAttribute("class", "hidden");
   const inputNumber = document.getElementById('inputNumber').value;
-
-  result.append(beepBoop(inputNumber).join(", "));
+  result.innerHTML = beepBoop(inputNumber).join(", ");
 }
 
 window.addEventListener('load', function() {
