@@ -10,11 +10,6 @@ function includesNumber(input, number) {
 
 function beepBoop(userInputNumber, userInputName) {
   let output = [];
-  // if (userInputNumber.trim() == 0) {
-  //   window.alert("Please enter a number!");
-  // } else if (userInputName.trim() == 0) {
-  //   window.alert("Please enter a name!");
-  // } else {
     for (let i = 0; i <= userInputNumber; i++) {
       if (includesNumber(i, 3)){
         output.push(`Won\'t you be my neighbor, ${userInputName}?`);
