@@ -35,13 +35,18 @@ function runNeighborhood(e) {
   document.getElementById("neighborhood").removeAttribute("class", "hidden");
   const inputNumber = document.getElementById('inputNumber').value;
   const inputName = document.getElementById('inputName').value;
+  const radioSelection = document.querySelector("input[name='flow']:checked").value;
 
   if (inputNumber == 0) {
     result.innerHTML = "Please enter a number!";
   } else if (inputName.trim() == 0) {
     result.innerHTML = "Please enter a name!";
   } else {
+    if (radioSelection == 'regular') {
     result.innerHTML = beepBoop(inputNumber, inputName).join(", ");
+  } else if (radioSelection == 'twilight') {
+      result.innerHTML = beepBoop(inputNumber, inputName).reverse().join(", ");
+    }
   }
 }
 window.addEventListener('load', function() {
